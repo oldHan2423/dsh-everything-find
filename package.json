@@ -1,0 +1,63 @@
+{
+  "name": "dsh-everything-find",
+  "version": "0.2.0-rc.2",
+  "description": "Everything (voidtools) file-name search for DeepSeek Harness: an everything_find tool plus a configuration card. · DSH 插件：把 Everything 索引变成模型可调用的 everything_find 工具。",
+  "type": "module",
+  "main": "./host.js",
+  "exports": {
+    ".": "./host.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "host.js",
+    "client.js",
+    "cordis.patch.yml",
+    "bin/es.exe",
+    "test",
+    "LICENSE",
+    "LICENSE-ES.txt",
+    "README.md",
+    "README.en.md"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "everything",
+    "voidtools",
+    "file-search"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oldHan2423/dsh-everything-find.git"
+  },
+  "homepage": "https://github.com/oldHan2423/dsh-everything-find#readme",
+  "bugs": {
+    "url": "https://github.com/oldHan2423/dsh-everything-find/issues"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": ">=0.1.5-rc.1",
+    "@deepseek-ai/schemastery": "^3.18.0"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.7-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

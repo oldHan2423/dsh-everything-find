@@ -1,0 +1,4 @@
+# Everything 索引搜索工具：注册 everything_find，供模型直接调用。
+- insert:
+    - id: dsh-everything-find
+      name: dsh-everything-find
