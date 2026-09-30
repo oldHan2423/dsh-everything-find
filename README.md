@@ -81,6 +81,10 @@ DSH 0.1.7 及以上：**设置 → 插件 → `dsh-everything-find`**，配置�
 
 ```powershell
 # 从源码运行时用 pnpm dsh …；装了全局 dsh 就直接用 dsh …
+# GitHub 源（当前可用）
+dsh plugin --profile web add github:oldHan2423/dsh-everything-find
+
+# npm 源（发布到 npm 之后可用）
 pnpm dsh plugin --profile web add dsh-everything-find
 ```
 
