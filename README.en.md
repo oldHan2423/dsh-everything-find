@@ -81,11 +81,11 @@ The configuration card renders with the built-in settings pages' own components 
 
 ```powershell
 # `pnpm dsh …` when running dsh from source; plain `dsh …` for a global install
-# GitHub source (available now)
-dsh plugin --profile web add github:oldHan2423/dsh-everything-find
+# From npm (published, recommended)
+dsh plugin --profile web add dsh-everything-find
 
-# npm source (once published)
-pnpm dsh plugin --profile web add dsh-everything-find
+# Or straight from GitHub
+dsh plugin --profile web add github:oldHan2423/dsh-everything-find
 ```
 
 `dsh plugin` forwards its arguments to pnpm **inside the profile directory**, so `file:`, local-directory, git, and tarball specs work the same way. Restart when it tells you to.

@@ -81,11 +81,11 @@ DSH 0.1.7 及以上：**设置 → 插件 → `dsh-everything-find`**，配置�
 
 ```powershell
 # 从源码运行时用 pnpm dsh …；装了全局 dsh 就直接用 dsh …
-# GitHub 源（当前可用）
-dsh plugin --profile web add github:oldHan2423/dsh-everything-find
+# 从 npm 安装（已发布，推荐）
+dsh plugin --profile web add dsh-everything-find
 
-# npm 源（发布到 npm 之后可用）
-pnpm dsh plugin --profile web add dsh-everything-find
+# 或直接从 GitHub 安装
+dsh plugin --profile web add github:oldHan2423/dsh-everything-find
 ```
 
 `dsh plugin` 把参数转交给 **profile 目录里**的 pnpm，所以 `file:`、本地目录、git、tarball 等规格同样可用；装完按提示重启。
